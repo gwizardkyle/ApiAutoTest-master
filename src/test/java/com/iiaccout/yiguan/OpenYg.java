@@ -32,7 +32,7 @@ public class OpenYg extends SetUpTearDown {
         //发送请求
         Response response = RunCaseJson.runCase(bodyString, "post");
 
-        //如果需要数据库断言，此处添加断言文件变量的map映射
+        //如果需要数据库断言，此处添加断言文件变量的map映射**
         //可通过调用封装的方法取值，比如查数据库、提取响应报文、调用接口等方式。
         Map<String, String> map = new HashMap<>();
         //查询数据库获取，取不到值返回""
