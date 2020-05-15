@@ -19,7 +19,7 @@ import static com.iiaccount.asserts.Asserts.asserts;
 
 /*
  *一贯开立II/III类户******************
- * 环境参数在SetUpTearDown 父类定义
+ * 环境参数在SetUpTearDown 父类定义***
  */
 @Feature("分类账户改造")
 public class OpenYg extends SetUpTearDown {
@@ -45,7 +45,7 @@ public class OpenYg extends SetUpTearDown {
         map.put("ACCOUNT_NO", account);
         map.put("CUST_ID", custId);
         map.put("MERCHANT_ID", merchanId);
-
+        //测试
         //断言（包含响应报文断言和数据库断言）
         String xmlFileName = this.getClass().getSimpleName(); //数据库断言xml文件名（与类名保持一致）
         asserts(caseMess, bodyString, response.asString(), xmlFileName, map);
