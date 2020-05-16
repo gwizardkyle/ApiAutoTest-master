@@ -18,7 +18,7 @@ import java.util.Map;
 import static com.iiaccount.asserts.Asserts.asserts;
 
 /*
- *一贯开立II/III类户******************
+ *一贯开立II/III类户*********************
  * 环境参数在SetUpTearDown 父类定义***
  */
 @Feature("分类账户改造")
