@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="IIACCOUNT自动化测试">
+
+<suite name="刘正良的自动化测试测试集">
 
     <listeners>
         <!--失败重跑-->
@@ -10,7 +11,7 @@
     <test verbose="2" name="IIACCOUNT">
 
         <classes>
-            <class name="com.iiaccout.yiguan.SendmsgYg"/>
+            <class name="com.iiaccout.yiguan.sum"/>
         </classes>
 
     </test>
