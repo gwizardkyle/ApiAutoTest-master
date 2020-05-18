@@ -43,7 +43,7 @@ public class SetUpTearDown {
      */
     @AfterSuite
     public void createEnvPropertiesForReport() throws IOException {
-        Map<String, String> data = new HashMap<>();
+        Map<String, String> data = new HashMap<String, String>();
         String database = "iiaccount_db.properties";
         data.put("DatabaseLoginName", new GetFileMess().getValue("DB_Name", database));
         data.put("DatabaseLoginPass", new GetFileMess().getValue("DB_Password", database));
