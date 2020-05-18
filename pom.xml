@@ -92,7 +92,8 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <suiteXmlFiles>
-                        <suiteXmlFile>./src/main/resources/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/main/resources/testng.xml</suiteXmlFile>
+
                     </suiteXmlFiles>
                     <argLine>
                         -javaagent:${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar
@@ -103,6 +104,16 @@
                             <name>allure.results.directory</name>
                             <value>./target/${timestamp}/allure-results</value>
                         </property>
+                        <systemProperties>
+                            <property>
+                                <name>allure.results.directory</name>
+                                <value>${project.build.directory}/allure-results</value>
+                            </property>
+                            <property>
+                                <name>allure.link.issue.pattern</name>
+                                <value>https://example.org/issue/{}</value>
+                            </property>
+                        </systemProperties>
                     </systemProperties>
                 </configuration>
                 <!--allure需要的aspectjweaver插件-->
