@@ -3,8 +3,10 @@ package com.iiaccout.yiguan;
 import io.qameta.allure.Feature;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners()
 public class sum {
     @Feature("算数计算功能验证")
     @BeforeClass //只运行一次

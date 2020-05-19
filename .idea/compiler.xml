@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14">
-      <module name="ApiAutoTest" target="10" />
+      <module name="ApiAutoTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
